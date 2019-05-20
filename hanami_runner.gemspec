@@ -8,9 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = HanamiRunner::Info::VERSION
   spec.authors       = ["apontini"]
   spec.email         = ["alberto.pontini@gmail.com"]
-  spec.description   = %q{Adds the run command to Hanami CLI allowing to execute ruby code via CLI (much like Rails Runnes)}
-  spec.summary       = %q{Adds the run command to Hanami CLI allowing to execute ruby code via CLI (much like Rails Runnes)}
-  #spec.executables   << 'coms'
+  spec.description   = %q{Adds the run command to Hanami CLI allowing to execute ruby code via CLI (much like Rails 'runner' command)}
+  spec.summary       = %q{Adds the run command to Hanami CLI allowing to execute ruby code via CLI (much like Rails 'runner' command)}
   spec.homepage      = "https://github.com/apontini/hanami-runner"
   spec.license       = "MIT"
 

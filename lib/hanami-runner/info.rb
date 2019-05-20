@@ -1,5 +1,5 @@
 module HanamiRunner
-  module Info
-    VERSION = "0.5.0"
+  class Info
+    VERSION = "0.6.0"
   end
 end

@@ -1,33 +1,24 @@
-# Hanami Runner
+[![Gem Version](https://badge.fury.io/rb/hanami-runner.svg)](https://badge.fury.io/rb/hanami-runner)  ![Gem](https://img.shields.io/gem/dt/hanami-runner.svg?color=limegreen)
 
-Welcome to your new Hanami project!
+# hanami-runner
 
-## Setup
+This gem allows you to add a `run` subcommand to the `hanami` command.
 
-How to run tests:
+## Installation
 
+Eazy peazy, just add this string to your gemfile
+
+```rb
+group :plugins do
+  gem 'hanami-runner'
+end
 ```
-% bundle exec rake
+and then use it with
+```shell
+hanami run '<YOUR-CODE>'
 ```
+while being in you hanami project root (i.e where the Gemfile is).
 
-How to run the development console:
-
-```
-% bundle exec hanami console
-```
-
-How to run the development server:
-
-```
-% bundle exec hanami server
-```
-
-How to prepare (create and migrate) DB for `development` and `test` environments:
-
-```
-% bundle exec hanami db prepare
-
-% HANAMI_ENV=test bundle exec hanami db prepare
-```
-
-Explore Hanami [guides](http://hanamirb.org/guides/), [API docs](http://docs.hanamirb.org/1.3.1/), or jump in [chat](http://chat.hanamirb.org) for help. Enjoy! 🌸
+## Maintenance and Contribution
+I'll be rarely maintaining this source code due to lack of time, but i will do as much as i can to resolve any open issues.
+If you want to contribute, feel free to fork it, branch it and to create a pull request.
