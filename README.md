@@ -2,7 +2,7 @@
 
 # hanami-runner
 
-This gem allows you to add a `run` subcommand to the `hanami` command.
+This gem allows you to add a `run` subcommand to the `hanami` command. This is supposed to allow you to execute code via CLI using your Hanami project dependencies (much like `runner` for Rails).
 
 ## Installation
 
