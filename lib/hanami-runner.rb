@@ -1,16 +1,10 @@
-require "hanami/cli"
-require "hanami"
+require "hanami/cli/commands"
 
-module Coms
+module Hanami
   class CLI
-    def call(*args)
-      Hanami::CLI.new(Commands).call(*args)
-    end
-
-    module Commands
-      extend Hanami::CLI::Registry
-
+    Commands.module_eval do
       class Run < Hanami::CLI::Command
+        desc "Executes ruby code in a Hanami environment"
         argument :code, required: true, desc: "The code to be executed"
 
         def call(code:)
@@ -20,7 +14,7 @@ module Coms
         end
       end
     end
+
+    register "run", Run
   end
 end
-
-Coms::CLI::Commands.register "run", Coms::CLI::Commands::Run

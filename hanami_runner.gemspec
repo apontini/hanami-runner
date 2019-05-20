@@ -10,8 +10,8 @@ Gem::Specification.new do |spec|
   spec.email         = ["alberto.pontini@gmail.com"]
   spec.description   = %q{Adds the run command to Hanami CLI allowing to execute ruby code via CLI (much like Rails Runnes)}
   spec.summary       = %q{Adds the run command to Hanami CLI allowing to execute ruby code via CLI (much like Rails Runnes)}
-  spec.executables   << 'coms'
-  spec.homepage      = "http://github.com/apontini/mina-proteus"
+  #spec.executables   << 'coms'
+  spec.homepage      = "https://github.com/apontini/hanami-runner"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
