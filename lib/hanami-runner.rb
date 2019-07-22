@@ -7,7 +7,7 @@ module Hanami
         desc "Executes ruby code in a Hanami environment"
         argument :code, required: true, desc: "The code to be executed"
 
-        def call(code)
+        def call(code:)
           require_relative Pathname.pwd.join("config/environment")
           Hanami.boot
           eval(code)
